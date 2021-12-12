@@ -239,10 +239,10 @@ def game():
                 starto=False
                 Oary=ochary+Oy-ochy
             
-            if(life==0):
+            if(life<=0):
                 gameover=True
                 pygame.mixer.Sound.play(Lose)
-            if(olife==0):
+            if(olife<=0):
                 gamewin=True
                 pygame.mixer.Sound.play(Win)
         else:
